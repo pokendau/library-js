@@ -7,6 +7,46 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="formButton">
+      <form>
+        <div>
+          <input
+            type="text"
+            min="1"
+            max="36"
+            required
+            placeholder="The Title: "
+          />
+          <input
+            type="text"
+            min="3"
+            max="36"
+            required
+            placeholder="The Author: "
+          />
+        </div>
+        <select name="genres" required id="">
+          <option value="fantasy">Fantasy</option>
+          <option value="fiction" selected>Fiction</option>
+          <option value="self-improvement">Self-improvement</option>
+        </select>
+        <button class="primary_button" type="submit">Submit</button>
+      </form>
+    </div>
+    <div id="bookhouse">
+      <h1 id="title">My Bookhouse</h1>
+      <div id="row1">
+        <div id="1" draggable="true" ondragstart="drag(event)" class="book">
+          <span> Harry Potter and the Philosopher's stone </span>
+          <span>J. K. Rowling</span>
+        </div>
+      </div>
+      <div id="separator"></div>
+      <div id="row2"></div>
+    </div>
+    <div ondrop="drop(event)" ondragover="allowDrop(event)" id="trash">
+      <img src="./trash.png" alt="" />
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
