@@ -31,13 +31,14 @@ const myLibrary = [
 
 let index = myLibrary.length;
 
-function Book(title, genre, author) {
-  // the constructor
-  this.id = index + 1;
-  index += 1;
-  this.title = title;
-  this.genre = genre;
-  this.author = author;
+class Book {
+  constructor(title, genre, author) {
+    this.id = index + 1;
+    index += 1;
+    this.title = title;
+    this.genre = genre;
+    this.author = author
+  }
 }
 
 function addBookToLibrary() {
