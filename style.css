@@ -15,6 +15,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 #bookhouse {
@@ -70,6 +71,7 @@ body {
 .book > span {
     font-size: 14px;
     writing-mode: sideways-lr;
+    writing-mode: vertical-rl;
     font-weight: 500;
 }
 
